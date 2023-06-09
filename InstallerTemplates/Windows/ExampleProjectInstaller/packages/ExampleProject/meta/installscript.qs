@@ -55,7 +55,6 @@ Component.prototype.createOperations = function()
 				component.addOperation("CreateShortcut", 
                             "@TargetDir@/win64/deploy/" + proj_name + ".exe",// target
                             "@DesktopDir@/" + proj_name + ".lnk",// link-path
-                            "workingDirectory=@TargetDir@",// working-dir
                             "description=Start App");// description
             } catch (e) {
 				print(e);
