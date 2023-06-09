@@ -58,7 +58,7 @@ The SW installer allows the user to install all required libraries and component
 3. Here, create two subfolders entitled `config` and `packages`.
 4. Within `config` create a `config.xml`.
 5. Within `packages` create a new subfolder, entitled: `${ExampleProject}`. Here, create two further subfolders, `data` and `meta`.
-6. `data` folder contains all files to be installed, e.g. configuration files, logos, etc. Do not put here the source code if you do not want to provide it. As golden rule, add all data to be installed within a subfolder of `data` named `win64`.
+6. `data` folder contains all files to be installed, e.g. the `deploy` folder, configuration files, logos, etc. Do not put here the source code if you do not want to provide it. As golden rule, add all data to be installed within a subfolder of `data` named `win64`.
 7. `meta` folder contains scripts and files for generating the installer with its GUI. Add here also additional files, such as the license to be accepted.
 
 All componetes are now ready and it is time to create the installer file. To this aim:
@@ -79,7 +79,7 @@ C:\Qt\Tools\QtInstallerFramework\{QtInstallerFramework_version}\bin\binarycreato
 3. Here, create two subfolders entitled `config` and `packages`.
 4. Within `config` create a `config.xml`.
 5. Within `packages` create a new subfolder, entitled: `${ExampleProject}`. Here, create two further subfolders, `data` and `meta`.
-6. `data` folder contains all files to be installed, e.g. configuration files, logos, etc. Do not put here the source code if you do not want to provide it. As golden rule, add all data to be installed within a subfolder of `data` named `macOS`.
+6. `data` folder contains all files to be installed, e.g. `${ExampleProject}.dmg` or entirely the `deploy` folder, configuration files, logos, etc. Do not put here the source code if you do not want to provide it. As golden rule, add all data to be installed within a subfolder of `data` named `macOS`.
 7. `meta` folder contains scripts and files for generating the installer with its GUI. Add here also additional files, such as the license to be accepted.
 
 All componetes are now ready and it is time to create the installer file. To this aim:
@@ -90,6 +90,6 @@ cd ${path_to_${ExampleProject}Installer}
 ```
 3. Launch `QtInstallerFramework`:
 ```
-/Applications/Qt/Tools/QtInstallerFramework/${Qt_version}/bin/binarycreator -c config/config.xml -p packages ${ExampleProject}Installer
+~/Applications/Qt/Tools/QtInstallerFramework/${Qt_version}/clang_64/bin/binarycreator -c config/config.xml -p packages ${ExampleProject}Installer
 ```
 4. At the end of the project, `${ExampleProject}Installer.exe` will appear in `${path_to_${ExampleProject}Installer}`.
