@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <Installer>
+     <Name>ExampleProject</Name>
+     <Version>X.Y</Version>
+     <Title>Example Project</Title>
+     <Publisher>Luigi Raiano</Publisher>
+     <!-- Directory name is used in component.xml -->
+    <StartMenuDir>Super App</StartMenuDir>
+     <TargetDir>@HomeDir@</TargetDir>
+     </Installer>
