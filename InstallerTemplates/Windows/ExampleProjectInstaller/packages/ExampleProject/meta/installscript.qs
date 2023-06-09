@@ -50,12 +50,11 @@ Component.prototype.createOperations = function()
         component.createOperations();
         if (installer.value("os") == "win") {
             try {
-                var userProfile = installer.environmentVariable("USERPROFILE");
-                installer.setValue("UserProfile", userProfile);
-				component.addOperation("CreateShortcut", 
-                            "@TargetDir@/win64/deploy/" + proj_name + ".exe",// target
-                            "@DesktopDir@/" + proj_name + ".lnk",// link-path
-                            "description=Start App");// description
+                component.addOperation("CreateShortcut",
+				       "@TargetDir@/win64/deploy/" + proj_name + ".exe",
+				       "@DesktopDir@/" + proj_name + ".lnk",
+				       "iconPath=@TargetDir@/win64/icon/logo.ico", "iconId=0",
+				       "description=Start App");
             } catch (e) {
 				print(e);
             }
