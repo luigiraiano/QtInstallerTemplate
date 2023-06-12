@@ -5,6 +5,6 @@
      <Title>Example Project</Title>
      <Publisher>Luigi Raiano</Publisher>
      <!-- Directory name is used in component.xml -->
-    <StartMenuDir>Super App</StartMenuDir>
-     <TargetDir>@HomeDir@</TargetDir>
+     <StartMenuDir>Example Project</StartMenuDir>
+     <TargetDir>@HomeDir@/ExampleProject</TargetDir>
      </Installer>
