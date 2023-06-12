@@ -69,7 +69,7 @@ cd ${path_to_${ExampleProject}Installer}
 ```
 3. Launch `QtInstallerFramework`:
 ```
-C:\Qt\Tools\QtInstallerFramework\{QtInstallerFramework_version}\bin\binarycreator.exe -c config\config.xml -p packages ${ExampleProject}Installer.exe
+C:\Qt\Tools\QtInstallerFramework\${QtInstallerFramework_version}\bin\binarycreator.exe -c config\config.xml -p packages ${ExampleProject}Installer.exe
 ```
 4. At the end of the project, `${ExampleProject}Installer.exe` will appear in `${path_to_${ExampleProject}Installer}`.
 
@@ -90,6 +90,6 @@ cd ${path_to_${ExampleProject}Installer}
 ```
 3. Launch `QtInstallerFramework`:
 ```
-~/Applications/Qt/Tools/QtInstallerFramework/${Qt_version}/clang_64/bin/binarycreator -c config/config.xml -p packages ${ExampleProject}Installer
+~/Applications/Qt/Tools/QtInstallerFramework/${QtInstallerFramework_version}/clang_64/bin/binarycreator -c config/config.xml -p packages ${ExampleProject}Installer
 ```
 4. At the end of the project, `${ExampleProject}Installer.exe` will appear in `${path_to_${ExampleProject}Installer}`.
