@@ -6,7 +6,6 @@
    <License name="License" file="LICENSE.txt" />
    </Licenses>
    <Default>true</Default>
-   <Script>installscript.qs</Script>
    <UserInterfaces>
    <UserInterface>page.ui</UserInterface>
    </UserInterfaces>
